@@ -218,9 +218,20 @@ h1 {
     vertical-align: middle;
 }
 
-.text-area-main .input-area h5 {
+.text-area-main .input-area input {
     font-weight: 400;
     font-size: medium;
+    background-color: var(--background);
+    border: none;
+    width: 90%;
+    color: var(--text);
+}
+.text-area-main .input-area input:focus {
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: medium;
+    color: var(--text);
 }
 
 .text-area-main .bottom-input-area {
@@ -236,6 +247,19 @@ h1 {
     position: relative;
 }
 
+.text-area-main .input-area .bottom-input-area-right div {
+    padding-block: 4px;
+    padding-inline: 10px;
+    border-radius: 2em;
+    transition: all 0.4s;
+}
+
+.text-area-main .input-area .bottom-input-area-right div:hover {
+    background-color: var(--outline);
+    color: var(--text);
+}
+
+
 .text-area-main .input-area .toggle_off {
     color: var(--outline);
 }
@@ -243,6 +267,7 @@ h1 {
 .text-area-main .input-area .bottom-input-area-left * {
     margin-inline: 5px;
 }
+
 
 .text-area-main .input-area .copilot-arrow {
     background-color: var(--outline);

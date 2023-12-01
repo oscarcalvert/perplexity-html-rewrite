@@ -30,6 +30,7 @@ h1 {
     font-family: var(--headerFont);
     font-weight: 400;
     font-size: 2.2em;
+    letter-spacing: 0.7px;
 }
 
 .main-area {

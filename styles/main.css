@@ -3,7 +3,7 @@
     --text: #e8e9e7;
     --text2:#9c9c9c;
     --background: #282827;
-    --background2: #222222;
+    --background2: #1c1c1c;
     --outline: #3d3d3d;
     --primary: #1eb9cd;
     --headerFont: Kanit, impact;
@@ -30,7 +30,7 @@ h1 {
     grid-template-columns: 13em 1fr;
     margin: 2px;
     grid-template-rows: 1fr;
-    min-height: 53vi;
+    max-height: 53vi;
 }
 .header {
     grid-column: 1;
@@ -77,6 +77,7 @@ h1 {
     display: flex;
     flex-direction: column;
     list-style: none;
+    gap: 4px;
 }
 
 .header ul li {
@@ -172,6 +173,71 @@ h1 {
 .download-area span:hover {
     background-color: var(--outline);
     color: var(--text);
+}
+
+.text-area-main {
+    margin-inline: 24em;
+    display: grid;
+    grid-template-rows: 250px 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+.text-area-main h1 {
+    text-align: center;
+    padding-block-end: 1em;
+}
+
+.text-area-main .second-row {
+    grid-row: 2;
+}
+
+.text-area-main .input-area {
+    display: block;
+    border: 1px solid var(--outline);
+    background-color: var(--background);
+    padding: 1.3em;
+    font-weight: 400;
+    border-radius: 3px;
+    transition: all 0.4s;
+}
+.text-area-main .input-area:hover {
+    box-shadow: 0 0 5px var(--outline);
+}
+
+.text-area-main .input-area i {
+    vertical-align: middle;
+}
+
+.text-area-main .input-area h5 {
+    font-weight: 400;
+    font-size: medium;
+}
+
+.text-area-main .bottom-input-area {
+    display: flex;
+    justify-content: space-between;
+    padding-block-start: 3em;
+    font-size: smaller;
+}
+
+.text-area-main .bottom-input-area-right {
+    display: flex;
+    column-gap: 1em;
+}
+
+.text-area-main .input-area .toggle_off {
+    color: var(--outline);
+}
+
+.text-area-main .input-area .bottom-input-area-left * {
+    margin-inline: 5px;
+}
+
+.text-area-main .input-area .copilot-arrow {
+    background-color: var(--outline);
+    border-radius: 100%;
+    padding: 3px;
 }
 
 

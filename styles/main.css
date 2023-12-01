@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Kaisei+HarunoUmi:wght@400;500;700&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Hedvig+Letters+Sans&family=Kaisei+HarunoUmi:wght@400;500;700&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+
 :root {
     --text: #e8e9e7;
     --text2:#9c9c9c;
@@ -6,7 +8,7 @@
     --background2: #1c1c1c;
     --outline: #3d3d3d;
     --primary: #1eb9cd;
-    --headerFont: Kanit, impact;
+    --headerFont: "Kanit", impact;
     --mainFont: Poppins, impact;
     background-color: var(--background);
     color: var(--text2);
@@ -22,7 +24,8 @@
 h1 {
     color: var(--text);
     font-family: var(--headerFont);
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 2.2em;
 }
 
 .main-area {
@@ -196,13 +199,14 @@ h1 {
     display: block;
     border: 1px solid var(--outline);
     background-color: var(--background);
-    padding: 1.3em;
+    padding: 1em 0.1em 0.3em 1em;
     font-weight: 400;
-    border-radius: 3px;
+    border-radius: 1em;
+    outline: 0px solid var(--outline);
     transition: all 0.4s;
 }
 .text-area-main .input-area:hover {
-    box-shadow: 0 0 5px var(--outline);
+    outline: 1px solid var(--outline);
 }
 
 .text-area-main .input-area i {
@@ -224,6 +228,7 @@ h1 {
 .text-area-main .bottom-input-area-right {
     display: flex;
     column-gap: 1em;
+    position: relative;
 }
 
 .text-area-main .input-area .toggle_off {
@@ -238,6 +243,57 @@ h1 {
     background-color: var(--outline);
     border-radius: 100%;
     padding: 3px;
+}
+
+.text-area-main .second-row .try-asking {
+    text-align: center;
+    color: var(--text);
+    padding-block-start: 2em;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.text-area-main .second-row .try-asking i {
+    vertical-align: middle;
+    font-size: 1.6em
+}
+
+.text-area-main .prompt-options {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-inline: 2em;
+    gap: 3px;
+}
+
+.text-area-main .prompt-options p {
+    font-size: 0.7em;
+    font-weight: 500;
+    padding: 0.4em;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.text-area-main .prompt-options p:hover {
+    color: var(--text);
+    background-color: var(--outline);
+}
+
+.third-row {
+    grid-row: 3;
+    position: relative;
+}
+
+.text-area-main .bottom-main-area {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-weight: 500;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
 }
 
 

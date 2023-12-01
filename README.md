@@ -1,6 +1,8 @@
-# perplexity-html-rewrite
-(practice) trying to recreate the UI for https://www.perplexity.ai/
+# perplexity-rewrite
+## not intended for commercial use. just html and css practice
+recreating the UI for https://www.perplexity.ai/
 
 Time spent: 5 hours
 
-# not intended for commercial use.
+https://oscarcalvert.github.io/perplexity-html-rewrite/
+
